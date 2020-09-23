@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="oracle" database="MDTS" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="ADDRESSES">
+      <Drawing expanded="true" location="284,0" dimensions="197,268" />
+      <Columns>
+        <Column name="USERIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ADDRESSID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ADDRESSTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="HOUSENO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="STREET" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DISTRICT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="COUNTRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="PINCODE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="PHONETYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="PHONENO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="COMPANY">
+      <Drawing expanded="true" location="1874,428" dimensions="210,229" />
+      <Columns>
+        <Column name="COMPANYID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMPANYNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="STREET" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="DISTRICT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="COUNTRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="MAILID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="CONTACT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DEVICES">
+      <Drawing expanded="true" location="1279,478" dimensions="237,129" />
+      <Columns>
+        <Column name="DEVICEID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICENAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="DEVICEDESCRIPTION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="300" />
+        </Column>
+        <Column name="COMPANYNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="DEVICEIMAGE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DEVICE_DELIVARY">
+      <Drawing expanded="true" location="581,61" dimensions="218,146" />
+      <Columns>
+        <Column name="ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="PROVIDERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="RECEIVERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="RECEIVEDDEVICEID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICERECEIVEDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DEVICEQUANTITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DEVICE_PURCHAGE">
+      <Drawing expanded="true" location="1828,50" dimensions="202,167" />
+      <Columns>
+        <Column name="PURCHAGEID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICEIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICEQUANTIRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMPANYIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICEPRICE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="FLOAT" size="4" />
+        </Column>
+        <Column name="TOTALPRICE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="FLOAT" size="4" />
+        </Column>
+        <Column name="PURCHAGEDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DEVICE_REQUEST">
+      <Drawing expanded="true" location="1249,60" dimensions="199,147" />
+      <Columns>
+        <Column name="REQUESTID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="REQUESTDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="QUANTITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DEVICEIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DOCTOR_DEVICE">
+      <Drawing expanded="true" location="899,60" dimensions="250,148" />
+      <Columns>
+        <Column name="USERIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICEIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICEQUEANTITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="PATIENTRATIO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DEVICEWORKINGSTATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="DEVICEDETAILSID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="INVENTARY">
+      <Drawing expanded="true" location="1548,90" dimensions="180,88" />
+      <Columns>
+        <Column name="ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEVICEIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="QUANTITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="LOGINDETAILS">
+      <Drawing expanded="true" location="0,80" dimensions="184,108" />
+      <Columns>
+        <Column name="USERIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="LOGINID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LOGINTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="USERDETAILS">
+      <Drawing expanded="true" location="535,418" dimensions="237,249" />
+      <Columns>
+        <Column name="USERID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="FIRSTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LASTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DOR" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="FORGOTPWQUESTION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="70" />
+        </Column>
+        <Column name="FORGOTPWANSWER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="70" />
+        </Column>
+        <Column name="PHOTOGRAPH" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+        <Column name="EMAILID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="50" />
+        </Column>
+        <Column name="GENDER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="ADDRESSES_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="ADDRESSES">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DEVICE_DELIVARY_DEVICEID_FK">
+      <Details primary_table="DEVICES" foreign_table="DEVICE_DELIVARY">
+        <PrimaryKeys>
+          <ColumnName name="DEVICEID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="RECEIVEDDEVICEID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DEVICE_DELIVARY_RID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="DEVICE_DELIVARY">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="RECEIVERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DEVICE_DELIVARY_PID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="DEVICE_DELIVARY">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="PROVIDERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="COMPANY_PURCHAGE_FK">
+      <Details primary_table="COMPANY" foreign_table="DEVICE_PURCHAGE">
+        <PrimaryKeys>
+          <ColumnName name="COMPANYID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="COMPANYIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DEVICE_PURCHAGE_FK">
+      <Details primary_table="DEVICES" foreign_table="DEVICE_PURCHAGE">
+        <PrimaryKeys>
+          <ColumnName name="DEVICEID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEVICEIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DEVICE_REQUEST_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="DEVICE_REQUEST">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DEVICE_REQUEST_DEVICE_FK">
+      <Details primary_table="DEVICES" foreign_table="DEVICE_REQUEST">
+        <PrimaryKeys>
+          <ColumnName name="DEVICEID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEVICEIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DOCTOR_DEVICE_DEVICEID_FK">
+      <Details primary_table="DEVICES" foreign_table="DOCTOR_DEVICE">
+        <PrimaryKeys>
+          <ColumnName name="DEVICEID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEVICEIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DOCTOR_DEVICE_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="DOCTOR_DEVICE">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="INVENTARY_USERID_FK">
+      <Details primary_table="DEVICES" foreign_table="INVENTARY">
+        <PrimaryKeys>
+          <ColumnName name="DEVICEID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEVICEIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINDETAILS_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="LOGINDETAILS">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+

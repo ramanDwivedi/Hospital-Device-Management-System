@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>com.hdm.util.InitServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/config/system.properties</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/InitServlet</url-pattern>
+	</servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckUserAction</servlet-name>
+    <servlet-class>com.hdm.action.CheckUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.hdm.action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.hdm.action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewUsers</servlet-name>
+    <servlet-class>com.hdm.action.ViewUsers</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.hdm.action.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.hdm.action.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewProfileAction</servlet-name>
+    <servlet-class>com.hdm.action.ViewProfileAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateUserProfileAction</servlet-name>
+    <servlet-class>com.hdm.action.UpdateUserProfileAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.hdm.action.RecoverPasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewPassword</servlet-name>
+    <servlet-class>com.hdm.action.NewPasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDeviceCompanyAction</servlet-name>
+    <servlet-class>com.hdm.action.AddDeviceCompanyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CompanyNamesAction</servlet-name>
+    <servlet-class>com.hdm.action.CompanyNamesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddNewDeviceAction</servlet-name>
+    <servlet-class>com.hdm.action.AddNewDeviceAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDevicesAction</servlet-name>
+    <servlet-class>com.hdm.action.ViewDevicesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DoctorDeviceRequestAction</servlet-name>
+    <servlet-class>com.hdm.action.DoctorDeviceRequestAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDevicesRequestAction</servlet-name>
+    <servlet-class>com.hdm.action.ViewDevicesRequestAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateDoctorDeviceReq</servlet-name>
+    <servlet-class>com.hdm.action.UpdateDoctorDeviceReqAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InventaryDeviceRequest</servlet-name>
+    <servlet-class>com.hdm.action.InventaryDeviceRequestAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DevicePurchageAction</servlet-name>
+    <servlet-class>com.hdm.action.DevicePurchageAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDevices</servlet-name>
+    <servlet-class>com.hdm.action.ViewDeviceAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDevicePurchages</servlet-name>
+    <servlet-class>com.hdm.action.ViewDevicePurchagesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDeviceCompany</servlet-name>
+    <servlet-class>com.hdm.action.ViewDeviceCompanyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteItemAction</servlet-name>
+    <servlet-class>com.hdm.action.DeleteItemAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDevicePatientRatio</servlet-name>
+    <servlet-class>com.hdm.action.AddDevicePatientRatioAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPatientDeviceRatio</servlet-name>
+    <servlet-class>com.hdm.action.AddPatientDeviceRatioAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDevicePatientRatio</servlet-name>
+    <servlet-class>com.hdm.action.ViewDevicePatientRatioAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateDoctorDevice</servlet-name>
+    <servlet-class>com.hdm.action.UpdateDoctorDeviceAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateViewDoctorDevice</servlet-name>
+    <servlet-class>com.hdm.action.UpdateViewDoctorDeviceAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAllDevices</servlet-name>
+    <servlet-class>com.hdm.action.ViewAllDevicesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDoctorApproveDevices</servlet-name>
+    <servlet-class>com.hdm.action.ViewDoctorApproveDevicesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDeviceRequestAction</servlet-name>
+    <servlet-class>com.hdm.action.DeleteDeviceRequestAction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>CheckUserAction</servlet-name>
+    <url-pattern>/CheckUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewUsers</servlet-name>
+    <url-pattern>/ViewUsers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutAction</servlet-name>
+    <url-pattern>/LogoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewProfileAction</servlet-name>
+    <url-pattern>/ViewProfileAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserProfileAction</servlet-name>
+    <url-pattern>/UpdateUserProfileAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewPassword</servlet-name>
+    <url-pattern>/NewPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDeviceCompanyAction</servlet-name>
+    <url-pattern>/AddDeviceCompanyAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompanyNamesAction</servlet-name>
+    <url-pattern>/CompanyNamesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewDeviceAction</servlet-name>
+    <url-pattern>/AddNewDeviceAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDevicesAction</servlet-name>
+    <url-pattern>/ViewDevicesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoctorDeviceRequestAction</servlet-name>
+    <url-pattern>/DoctorDeviceRequestAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDevicesRequestAction</servlet-name>
+    <url-pattern>/ViewDevicesRequestAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateDoctorDeviceReq</servlet-name>
+    <url-pattern>/UpdateDoctorDeviceReq</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InventaryDeviceRequest</servlet-name>
+    <url-pattern>/InventaryDeviceRequest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DevicePurchageAction</servlet-name>
+    <url-pattern>/DevicePurchageAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDevices</servlet-name>
+    <url-pattern>/ViewDevices</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDevicePurchages</servlet-name>
+    <url-pattern>/ViewDevicePurchages</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDeviceCompany</servlet-name>
+    <url-pattern>/ViewDeviceCompany</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteItemAction</servlet-name>
+    <url-pattern>/DeleteItemAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDevicePatientRatio</servlet-name>
+    <url-pattern>/AddDevicePatientRatio</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPatientDeviceRatio</servlet-name>
+    <url-pattern>/AddPatientDeviceRatio</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDevicePatientRatio</servlet-name>
+    <url-pattern>/ViewDevicePatientRatio</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateDoctorDevice</servlet-name>
+    <url-pattern>/UpdateDoctorDevice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateViewDoctorDevice</servlet-name>
+    <url-pattern>/UpdateViewDoctorDevice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAllDevices</servlet-name>
+    <url-pattern>/ViewAllDevices</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDoctorApproveDevices</servlet-name>
+    <url-pattern>/ViewDoctorApproveDevices</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDeviceRequestAction</servlet-name>
+    <url-pattern>/DeleteDeviceRequestAction</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>MainHome.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
